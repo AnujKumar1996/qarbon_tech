@@ -1,0 +1,1539 @@
+{
+  "response_201": {
+      "description": "Created (https://tools.ietf.org/html/rfc7231#section-6.3.2)",
+      "content": {
+          "application/json;charset=utf-8": {
+              "schema":{
+                  "$ref": "#/components/schemas/ProductOrder"
+              },
+              "example":
+              {
+                  "externalId": "string",
+                  "note": [
+                    {
+                      "author": "string",
+                      "date": "2023-08-16T18:04:47.271Z",
+                      "id": "string",
+                      "source": "buyer",
+                      "text": "string"
+                    }
+                  ],
+                  "projectId": "string",
+                  "relatedContactInformation": [
+                    {
+                      "emailAddress": "string",
+                      "name": "string",
+                      "number": "string",
+                      "numberExtension": "string",
+                      "organization": "string",
+                      "postalAddress": {
+                        "@schemaLocation": "string",
+                        "@type": "FieldedAddress",
+                        "role": "string",
+                        "city": "string",
+                        "country": "string",
+                        "geographicSubAddress": {
+                          "buildingName": "string",
+                          "levelNumber": "string",
+                          "levelType": "string",
+                          "privateStreetName": "string",
+                          "privateStreetNumber": "string",
+                          "subUnit": [
+                            {
+                              "subUnitNumber": "string",
+                              "subUnitType": "string"
+                            }
+                          ]
+                        },
+                        "locality": "string",
+                        "postcode": "string",
+                        "postcodeExtension": "string",
+                        "stateOrProvince": "string",
+                        "streetName": "string",
+                        "streetNr": "string",
+                        "streetNrLast": "string",
+                        "streetNrLastSuffix": "string",
+                        "streetNrSuffix": "string",
+                        "streetSuffix": "string",
+                        "streetType": "string"
+                      },
+                      "role": "string"
+                    }
+                  ],
+                  "cancellationCharge": [
+                    {
+                      "href": "string",
+                      "id": "string"
+                    }
+                  ],
+                  "cancellationDate": "2023-08-16T18:04:47.271Z",
+                  "cancellationReason": "string",
+                  "completionDate": "2023-08-16T18:04:47.271Z",
+                  "href": "string",
+                  "id": "string",
+                  "orderDate": "2023-08-16T18:04:47.271Z",
+                  "productOrderItem": [
+                    {
+                      "action": "add",
+                      "agreementName": "string",
+                      "billingAccount": {
+                        "id": "string"
+                      },
+                      "coordinatedAction": [
+                        {
+                          "coordinatedActionDelay": {
+                            "amount": 0,
+                            "units": "calendarMonths"
+                          },
+                          "coordinationDependency": "startToStart",
+                          "itemId": "string"
+                        }
+                      ],
+                      "endCustomerName": "string",
+                      "expediteIndicator": false,
+                      "id": "string",
+                      "note": [
+                        {
+                          "author": "string",
+                          "date": "2023-08-16T18:04:47.271Z",
+                          "id": "string",
+                          "source": "buyer",
+                          "text": "string"
+                        }
+                      ],
+                      "product": {
+                        "href": "string",
+                        "id": "string",
+                        "place": [
+                          {
+                            "@schemaLocation": "string",
+                            "@type": "FieldedAddress",
+                            "role": "string"
+                          }
+                        ],
+                        "productConfiguration": {
+                          "type": "string"
+                        },
+                        "productOffering": {
+                          "href": "string",
+                          "id": "string"
+                        },
+                        "productRelationship": [
+                          {
+                            "href": "string",
+                            "id": "string",
+                            "relationshipType": "string"
+                          }
+                        ]
+                      },
+                      "productOfferingQualificationItem": {
+                        "alternateProductOfferingProposalId": "string",
+                        "id": "string",
+                        "productOfferingQualificationHref": "string",
+                        "productOfferingQualificationId": "string"
+                      },
+                      "productOrderItemRelationship": [
+                        {
+                          "id": "string",
+                          "relationshipType": "string"
+                        }
+                      ],
+                      "quoteItem": {
+                        "id": "string",
+                        "quoteHref": "string",
+                        "quoteId": "string"
+                      },
+                      "relatedBuyerPON": "string",
+                      "relatedContactInformation": [
+                        {
+                          "emailAddress": "string",
+                          "name": "string",
+                          "number": "string",
+                          "numberExtension": "string",
+                          "organization": "string",
+                          "postalAddress": {
+                            "@schemaLocation": "string",
+                            "@type": "FieldedAddress",
+                            "role": "string",
+                            "city": "string",
+                            "country": "string",
+                            "geographicSubAddress": {
+                              "buildingName": "string",
+                              "levelNumber": "string",
+                              "levelType": "string",
+                              "privateStreetName": "string",
+                              "privateStreetNumber": "string",
+                              "subUnit": [
+                                {
+                                  "subUnitNumber": "string",
+                                  "subUnitType": "string"
+                                }
+                              ]
+                            },
+                            "locality": "string",
+                            "postcode": "string",
+                            "postcodeExtension": "string",
+                            "stateOrProvince": "string",
+                            "streetName": "string",
+                            "streetNr": "string",
+                            "streetNrLast": "string",
+                            "streetNrLastSuffix": "string",
+                            "streetNrSuffix": "string",
+                            "streetSuffix": "string",
+                            "streetType": "string"
+                          },
+                          "role": "string"
+                        }
+                      ],
+                      "requestedCompletionDate": "2023-08-16T18:04:47.271Z",
+                      "requestedItemTerm": {
+                        "description": "string",
+                        "duration": {
+                          "amount": 0,
+                          "units": "calendarMonths"
+                        },
+                        "endOfTermAction": "roll",
+                        "name": "string",
+                        "rollInterval": {
+                          "amount": 0,
+                          "units": "calendarMonths"
+                        }
+                      },
+                      "tspRestorationPriority": "string",
+                      "charge": [
+                        {
+                          "href": "string",
+                          "id": "string"
+                        }
+                      ],
+                      "completionDate": "2023-08-16T18:04:47.271Z",
+                      "expectedCompletionDate": "2023-08-16T18:04:47.271Z",
+                      "expediteAcceptedIndicator": false,
+                      "itemTerm": [
+                        {
+                          "description": "string",
+                          "duration": {
+                            "amount": 0,
+                            "units": "calendarMonths"
+                          },
+                          "endOfTermAction": "roll",
+                          "name": "string",
+                          "rollInterval": {
+                            "amount": 0,
+                            "units": "calendarMonths"
+                          }
+                        }
+                      ],
+                      "milestone": [
+                        {
+                          "date": "2023-08-16T18:04:47.271Z",
+                          "name": "string",
+                          "note": "string"
+                        }
+                      ],
+                      "state": "acknowledged",
+                      "stateChange": [
+                        {
+                          "changeDate": "2023-08-16T18:04:47.271Z",
+                          "changeReason": "string",
+                          "state": "acknowledged"
+                        }
+                      ],
+                      "terminationError": [
+                        {
+                          "code": "missingProperty",
+                          "propertyPath": "string",
+                          "value": "string"
+                        }
+                      ]
+                    }
+                  ],
+                  "state": "acknowledged",
+                  "stateChange": [
+                    {
+                      "changeDate": "2023-08-16T18:04:47.271Z",
+                      "changeReason": "string",
+                      "state": "acknowledged"
+                    }
+                  ]
+                }
+                
+          }
+      }
+  },
+  "get_by_id_response_200": {
+    "description": "OK. (https://tools.ietf.org/html/rfc7231#section-6.3.1)",
+    "content": {
+        "application/json;charset=utf-8": {
+            "schema":{
+                "$ref": "#/components/schemas/ProductOrder"
+            },
+            "example":
+            {
+                "externalId": "string",
+                "note": [
+                  {
+                    "author": "string",
+                    "date": "2023-08-16T18:04:47.271Z",
+                    "id": "string",
+                    "source": "buyer",
+                    "text": "string"
+                  }
+                ],
+                "projectId": "string",
+                "relatedContactInformation": [
+                  {
+                    "emailAddress": "string",
+                    "name": "string",
+                    "number": "string",
+                    "numberExtension": "string",
+                    "organization": "string",
+                    "postalAddress": {
+                      "@schemaLocation": "string",
+                      "@type": "FieldedAddress",
+                      "role": "string",
+                      "city": "string",
+                      "country": "string",
+                      "geographicSubAddress": {
+                        "buildingName": "string",
+                        "levelNumber": "string",
+                        "levelType": "string",
+                        "privateStreetName": "string",
+                        "privateStreetNumber": "string",
+                        "subUnit": [
+                          {
+                            "subUnitNumber": "string",
+                            "subUnitType": "string"
+                          }
+                        ]
+                      },
+                      "locality": "string",
+                      "postcode": "string",
+                      "postcodeExtension": "string",
+                      "stateOrProvince": "string",
+                      "streetName": "string",
+                      "streetNr": "string",
+                      "streetNrLast": "string",
+                      "streetNrLastSuffix": "string",
+                      "streetNrSuffix": "string",
+                      "streetSuffix": "string",
+                      "streetType": "string"
+                    },
+                    "role": "string"
+                  }
+                ],
+                "cancellationCharge": [
+                  {
+                    "href": "string",
+                    "id": "string"
+                  }
+                ],
+                "cancellationDate": "2023-08-16T18:04:47.271Z",
+                "cancellationReason": "string",
+                "completionDate": "2023-08-16T18:04:47.271Z",
+                "href": "string",
+                "id": "string",
+                "orderDate": "2023-08-16T18:04:47.271Z",
+                "productOrderItem": [
+                  {
+                    "action": "add",
+                    "agreementName": "string",
+                    "billingAccount": {
+                      "id": "string"
+                    },
+                    "coordinatedAction": [
+                      {
+                        "coordinatedActionDelay": {
+                          "amount": 0,
+                          "units": "calendarMonths"
+                        },
+                        "coordinationDependency": "startToStart",
+                        "itemId": "string"
+                      }
+                    ],
+                    "endCustomerName": "string",
+                    "expediteIndicator": false,
+                    "id": "string",
+                    "note": [
+                      {
+                        "author": "string",
+                        "date": "2023-08-16T18:04:47.271Z",
+                        "id": "string",
+                        "source": "buyer",
+                        "text": "string"
+                      }
+                    ],
+                    "product": {
+                      "href": "string",
+                      "id": "string",
+                      "place": [
+                        {
+                          "@schemaLocation": "string",
+                          "@type": "FieldedAddress",
+                          "role": "string"
+                        }
+                      ],
+                      "productConfiguration": {
+                        "type": "string"
+                      },
+                      "productOffering": {
+                        "href": "string",
+                        "id": "string"
+                      },
+                      "productRelationship": [
+                        {
+                          "href": "string",
+                          "id": "string",
+                          "relationshipType": "string"
+                        }
+                      ]
+                    },
+                    "productOfferingQualificationItem": {
+                      "alternateProductOfferingProposalId": "string",
+                      "id": "string",
+                      "productOfferingQualificationHref": "string",
+                      "productOfferingQualificationId": "string"
+                    },
+                    "productOrderItemRelationship": [
+                      {
+                        "id": "string",
+                        "relationshipType": "string"
+                      }
+                    ],
+                    "quoteItem": {
+                      "id": "string",
+                      "quoteHref": "string",
+                      "quoteId": "string"
+                    },
+                    "relatedBuyerPON": "string",
+                    "relatedContactInformation": [
+                      {
+                        "emailAddress": "string",
+                        "name": "string",
+                        "number": "string",
+                        "numberExtension": "string",
+                        "organization": "string",
+                        "postalAddress": {
+                          "@schemaLocation": "string",
+                          "@type": "FieldedAddress",
+                          "role": "string",
+                          "city": "string",
+                          "country": "string",
+                          "geographicSubAddress": {
+                            "buildingName": "string",
+                            "levelNumber": "string",
+                            "levelType": "string",
+                            "privateStreetName": "string",
+                            "privateStreetNumber": "string",
+                            "subUnit": [
+                              {
+                                "subUnitNumber": "string",
+                                "subUnitType": "string"
+                              }
+                            ]
+                          },
+                          "locality": "string",
+                          "postcode": "string",
+                          "postcodeExtension": "string",
+                          "stateOrProvince": "string",
+                          "streetName": "string",
+                          "streetNr": "string",
+                          "streetNrLast": "string",
+                          "streetNrLastSuffix": "string",
+                          "streetNrSuffix": "string",
+                          "streetSuffix": "string",
+                          "streetType": "string"
+                        },
+                        "role": "string"
+                      }
+                    ],
+                    "requestedCompletionDate": "2023-08-16T18:04:47.271Z",
+                    "requestedItemTerm": {
+                      "description": "string",
+                      "duration": {
+                        "amount": 0,
+                        "units": "calendarMonths"
+                      },
+                      "endOfTermAction": "roll",
+                      "name": "string",
+                      "rollInterval": {
+                        "amount": 0,
+                        "units": "calendarMonths"
+                      }
+                    },
+                    "tspRestorationPriority": "string",
+                    "charge": [
+                      {
+                        "href": "string",
+                        "id": "string"
+                      }
+                    ],
+                    "completionDate": "2023-08-16T18:04:47.271Z",
+                    "expectedCompletionDate": "2023-08-16T18:04:47.271Z",
+                    "expediteAcceptedIndicator": false,
+                    "itemTerm": [
+                      {
+                        "description": "string",
+                        "duration": {
+                          "amount": 0,
+                          "units": "calendarMonths"
+                        },
+                        "endOfTermAction": "roll",
+                        "name": "string",
+                        "rollInterval": {
+                          "amount": 0,
+                          "units": "calendarMonths"
+                        }
+                      }
+                    ],
+                    "milestone": [
+                      {
+                        "date": "2023-08-16T18:04:47.271Z",
+                        "name": "string",
+                        "note": "string"
+                      }
+                    ],
+                    "state": "acknowledged",
+                    "stateChange": [
+                      {
+                        "changeDate": "2023-08-16T18:04:47.271Z",
+                        "changeReason": "string",
+                        "state": "acknowledged"
+                      }
+                    ],
+                    "terminationError": [
+                      {
+                        "code": "missingProperty",
+                        "propertyPath": "string",
+                        "value": "string"
+                      }
+                    ]
+                  }
+                ],
+                "state": "acknowledged",
+                "stateChange": [
+                  {
+                    "changeDate": "2023-08-16T18:04:47.271Z",
+                    "changeReason": "string",
+                    "state": "acknowledged"
+                  }
+                ]
+              }
+        }
+    }
+},
+"listProductOrder_response_200": {
+  "description": "OK. (https://tools.ietf.org/html/rfc7231#section-6.3.1)",
+  "content": {
+      "application/json;charset=utf-8": {
+          "schema": {
+              "type": "array",
+              "items": {
+                  "$ref": "#/components/schemas/ProductOrder_Find"
+              }
+          }
+      }
+  }
+},
+
+"cancelProductOrder_response_200": {
+  "content": {
+      "application/json;charset=utf-8": {
+          "schema": {
+              "type": "array",
+              "items": {
+                  "$ref": "#/components/schemas/CancelProductOrder_Find"
+              }
+          }
+      }
+  }
+},
+"ModifyProductOrderItemRequestedDeliveryDate_201":{
+  "content": {
+    "application/json;charset=utf-8": {
+        "schema": {
+            "type": "array",
+            "items": {
+                "$ref": "#/components/schemas/MEFModifyProductOrderItemRequestedDeliveryDate"
+            }
+        }
+    }
+}
+},
+"ModifyProductOrderItemRequestedDeliveryDate_200":{
+  "content": {
+    "application/json;charset=utf-8": {
+        "schema": {
+            "type": "array",
+            "items": {
+                "$ref": "#/components/schemas/MEFModifyProductOrderItemRequestedDeliveryDate"
+            }
+        }
+    }
+}
+},
+
+"update_by_id_response_200": {
+  "description": "Updated (https://tools.ietf.org/html/rfc7231#section-6.3.1)",
+  "content": {
+      "application/json;charset=utf-8": {
+          "schema":{
+              "$ref": "#/components/schemas/ProductOrder"
+          },
+          "example":
+          {
+              "externalId": "string",
+              "note": [
+                {
+                  "author": "string",
+                  "date": "2023-08-16T18:04:47.271Z",
+                  "id": "string",
+                  "source": "buyer",
+                  "text": "string"
+                }
+              ],
+              "projectId": "string",
+              "relatedContactInformation": [
+                {
+                  "emailAddress": "string",
+                  "name": "string",
+                  "number": "string",
+                  "numberExtension": "string",
+                  "organization": "string",
+                  "postalAddress": {
+                    "@schemaLocation": "string",
+                    "@type": "FieldedAddress",
+                    "role": "string",
+                    "city": "string",
+                    "country": "string",
+                    "geographicSubAddress": {
+                      "buildingName": "string",
+                      "levelNumber": "string",
+                      "levelType": "string",
+                      "privateStreetName": "string",
+                      "privateStreetNumber": "string",
+                      "subUnit": [
+                        {
+                          "subUnitNumber": "string",
+                          "subUnitType": "string"
+                        }
+                      ]
+                    },
+                    "locality": "string",
+                    "postcode": "string",
+                    "postcodeExtension": "string",
+                    "stateOrProvince": "string",
+                    "streetName": "string",
+                    "streetNr": "string",
+                    "streetNrLast": "string",
+                    "streetNrLastSuffix": "string",
+                    "streetNrSuffix": "string",
+                    "streetSuffix": "string",
+                    "streetType": "string"
+                  },
+                  "role": "string"
+                }
+              ],
+              "cancellationCharge": [
+                {
+                  "href": "string",
+                  "id": "string"
+                }
+              ],
+              "cancellationDate": "2023-08-16T18:04:47.271Z",
+              "cancellationReason": "string",
+              "completionDate": "2023-08-16T18:04:47.271Z",
+              "href": "string",
+              "id": "string",
+              "orderDate": "2023-08-16T18:04:47.271Z",
+              "productOrderItem": [
+                {
+                  "action": "add",
+                  "agreementName": "string",
+                  "billingAccount": {
+                    "id": "string"
+                  },
+                  "coordinatedAction": [
+                    {
+                      "coordinatedActionDelay": {
+                        "amount": 0,
+                        "units": "calendarMonths"
+                      },
+                      "coordinationDependency": "startToStart",
+                      "itemId": "string"
+                    }
+                  ],
+                  "endCustomerName": "string",
+                  "expediteIndicator": false,
+                  "id": "string",
+                  "note": [
+                    {
+                      "author": "string",
+                      "date": "2023-08-16T18:04:47.271Z",
+                      "id": "string",
+                      "source": "buyer",
+                      "text": "string"
+                    }
+                  ],
+                  "product": {
+                    "href": "string",
+                    "id": "string",
+                    "place": [
+                      {
+                        "@schemaLocation": "string",
+                        "@type": "FieldedAddress",
+                        "role": "string"
+                      }
+                    ],
+                    "productConfiguration": {
+                      "type": "string"
+                    },
+                    "productOffering": {
+                      "href": "string",
+                      "id": "string"
+                    },
+                    "productRelationship": [
+                      {
+                        "href": "string",
+                        "id": "string",
+                        "relationshipType": "string"
+                      }
+                    ]
+                  },
+                  "productOfferingQualificationItem": {
+                    "alternateProductOfferingProposalId": "string",
+                    "id": "string",
+                    "productOfferingQualificationHref": "string",
+                    "productOfferingQualificationId": "string"
+                  },
+                  "productOrderItemRelationship": [
+                    {
+                      "id": "string",
+                      "relationshipType": "string"
+                    }
+                  ],
+                  "quoteItem": {
+                    "id": "string",
+                    "quoteHref": "string",
+                    "quoteId": "string"
+                  },
+                  "relatedBuyerPON": "string",
+                  "relatedContactInformation": [
+                    {
+                      "emailAddress": "string",
+                      "name": "string",
+                      "number": "string",
+                      "numberExtension": "string",
+                      "organization": "string",
+                      "postalAddress": {
+                        "@schemaLocation": "string",
+                        "@type": "FieldedAddress",
+                        "role": "string",
+                        "city": "string",
+                        "country": "string",
+                        "geographicSubAddress": {
+                          "buildingName": "string",
+                          "levelNumber": "string",
+                          "levelType": "string",
+                          "privateStreetName": "string",
+                          "privateStreetNumber": "string",
+                          "subUnit": [
+                            {
+                              "subUnitNumber": "string",
+                              "subUnitType": "string"
+                            }
+                          ]
+                        },
+                        "locality": "string",
+                        "postcode": "string",
+                        "postcodeExtension": "string",
+                        "stateOrProvince": "string",
+                        "streetName": "string",
+                        "streetNr": "string",
+                        "streetNrLast": "string",
+                        "streetNrLastSuffix": "string",
+                        "streetNrSuffix": "string",
+                        "streetSuffix": "string",
+                        "streetType": "string"
+                      },
+                      "role": "string"
+                    }
+                  ],
+                  "requestedCompletionDate": "2023-08-16T18:04:47.271Z",
+                  "requestedItemTerm": {
+                    "description": "string",
+                    "duration": {
+                      "amount": 0,
+                      "units": "calendarMonths"
+                    },
+                    "endOfTermAction": "roll",
+                    "name": "string",
+                    "rollInterval": {
+                      "amount": 0,
+                      "units": "calendarMonths"
+                    }
+                  },
+                  "tspRestorationPriority": "string",
+                  "charge": [
+                    {
+                      "href": "string",
+                      "id": "string"
+                    }
+                  ],
+                  "completionDate": "2023-08-16T18:04:47.271Z",
+                  "expectedCompletionDate": "2023-08-16T18:04:47.271Z",
+                  "expediteAcceptedIndicator": false,
+                  "itemTerm": [
+                    {
+                      "description": "string",
+                      "duration": {
+                        "amount": 0,
+                        "units": "calendarMonths"
+                      },
+                      "endOfTermAction": "roll",
+                      "name": "string",
+                      "rollInterval": {
+                        "amount": 0,
+                        "units": "calendarMonths"
+                      }
+                    }
+                  ],
+                  "milestone": [
+                    {
+                      "date": "2023-08-16T18:04:47.271Z",
+                      "name": "string",
+                      "note": "string"
+                    }
+                  ],
+                  "state": "acknowledged",
+                  "stateChange": [
+                    {
+                      "changeDate": "2023-08-16T18:04:47.271Z",
+                      "changeReason": "string",
+                      "state": "acknowledged"
+                    }
+                  ],
+                  "terminationError": [
+                    {
+                      "code": "missingProperty",
+                      "propertyPath": "string",
+                      "value": "string"
+                    }
+                  ]
+                }
+              ],
+              "state": "acknowledged",
+              "stateChange": [
+                {
+                  "changeDate": "2023-08-16T18:04:47.271Z",
+                  "changeReason": "string",
+                  "state": "acknowledged"
+                }
+              ]
+            }
+      }
+  }
+},
+"cancel_response_201": {
+"description": "Created ",
+"content": {
+    "application/json;charset=utf-8": {
+        "schema":{
+            "$ref": "#/components/schemas/CancelProductOrder"
+        },
+        "example":
+        {
+          "cancellationDeniedReason": "string",
+          "cancellationReason": "string",
+          "cancellationReasonType": "technical",
+          "charge": {
+            "href": "string",
+            "id": "string"
+          },
+          "href": "string",
+          "id": "string",
+          "productOrder": {
+            "productOrderHref": "string",
+            "productOrderId": "string"
+          },
+          "relatedContactInformation": [
+            {
+              "emailAddress": "string",
+              "name": "string",
+              "number": "string",
+              "numberExtension": "string",
+              "organization": "string",
+              "postalAddress": {
+                "@schemaLocation": "string",
+                "@type": "FieldedAddress",
+                "role": "string",
+                "city": "string",
+                "country": "string",
+                "geographicSubAddress": {
+                  "buildingName": "string",
+                  "levelNumber": "string",
+                  "levelType": "string",
+                  "privateStreetName": "string",
+                  "privateStreetNumber": "string",
+                  "subUnit": [
+                    {
+                      "subUnitNumber": "string",
+                      "subUnitType": "string"
+                    }
+                  ]
+                },
+                "locality": "string",
+                "postcode": "string",
+                "postcodeExtension": "string",
+                "stateOrProvince": "string",
+                "streetName": "string",
+                "streetNr": "string",
+                "streetNrLast": "string",
+                "streetNrLastSuffix": "string",
+                "streetNrSuffix": "string",
+                "streetSuffix": "string",
+                "streetType": "string"
+              },
+              "role": "string"
+            }
+          ],
+          "state": "acknowledged"
+        }
+    }
+}
+},
+"list_response_category_200":{
+"description": "Success",
+"content": {
+    "application/json;charset=utf-8": {
+        "schema": {
+            "$ref": "#/components/schemas/ProductCategory"
+        },
+        "example":  {
+            "id": "string",
+            "href": "string",
+            "name": "string",
+            "description": "string",
+            "lastUpdate": "2023-11-06T11:28:52.076Z",
+            "lifecycleStatus": "active",
+            "parentCategory": {
+              "id": "string",
+              "href": "string"
+            },
+            "subCategory": [
+              {
+                "id": "string",
+                "href": "string"
+              }
+            ],
+            "productOffering": [
+              {
+                "id": "string",
+                "href": "string"
+              }
+            ]
+          }
+        }
+    }
+},
+"list_response_offering_200":{
+  "description": "Success",
+  "content": {
+      "application/json;charset=utf-8": {
+          "schema": {
+              "$ref": "#/components/schemas/ProductOffering_Find"
+          },
+          "example": {
+            "id": "string",
+            "href": "string",
+            "name": "string",
+            "description": "string",
+            "lastUpdate": "2023-11-08T11:00:39.854Z",
+            "lifecycleStatus": "active",
+            "agreement": "string",
+            "channel": [
+              "string"
+            ],
+            "marketSegment": [
+              "string"
+            ],
+            "region": [
+              {
+                "locality": "string",
+                "stateOrProvince": "string",
+                "country": "string"
+              }
+            ],
+            "category": [
+              {
+                "id": "string",
+                "href": "string"
+              }
+            ]
+          }
+          }
+      }
+  },
+  "catalog_productSpecification_response_200": {
+    "description": "OK. (https://tools.ietf.org/html/rfc7231#section-6.3.1)",
+    "content": {
+        "application/json;charset=utf-8": {
+            "schema": {
+                "$ref": "#/components/schemas/ProductSpecification"
+            },
+            "example":
+              {
+                "id": "string",
+                "href": "string",
+                "name": "string",
+                "lifecycleStatus": "active",
+                "lastUpdate": "2023-11-13T16:03:26.580Z",
+                "brand": "string",
+                "description": "string",
+                "productNumber": "string",
+                "attachment": [
+                  {
+                    "attachmentId": "string",
+                    "author": "string",
+                    "content": "string",
+                    "creationDate": "2023-11-13T16:03:26.580Z",
+                    "description": "string",
+                    "mimeType": "string",
+                    "name": "string",
+                    "size": {
+                      "amount": 1,
+                      "units": "BYTES"
+                    },
+                    "source": "buyer",
+                    "url": "string"
+                  }
+                ],
+                "note": [
+                  {
+                    "author": "string",
+                    "date": "2023-11-13T16:03:26.580Z",
+                    "id": "string",
+                    "source": "buyer",
+                    "text": "string"
+                  }
+                ],
+                "sourceSchema": {
+                  "schema": "string",
+                  "schemaLocation": "string"
+                },
+                "productSpecificationRelationship": [
+                  {
+                    "id": "string",
+                    "relationshipType": "string",
+                    "minCardinality": 0,
+                    "maxCardinality": -1
+                  }
+                ]
+              }
+            }
+        }
+    },
+  "workorder_list_response_200": {
+    "description": "OK. (https://tools.ietf.org/html/rfc7231#section-6.3.1)",
+    "content": {
+        "application/json;charset=utf-8": {
+            "schema": {
+                "$ref": "#/components/schemas/WorkOrder"
+            },
+            "example":
+            {
+              "id": "string",
+              "appointmentRequired": true,
+              "place": [
+                {
+                  "@schemaLocation": "string",
+                  "role": "string"
+                }
+              ],
+              "relatedEntity": [
+                {
+                  "@referredType": "Product",
+                  "href": "string",
+                  "id": "string",
+                  "role": "string"
+                }
+              ],
+              "state": "cancelled"
+            }
+            }
+        }
+    },
+  "workorder_id_response_200": {
+    "description": "OK. (https://tools.ietf.org/html/rfc7231#section-6.3.1)",
+    "content": {
+        "application/json;charset=utf-8": {
+            "schema": {
+                "$ref": "#/components/schemas/WorkOrder"
+            },
+            "example":
+            {
+              "id": "string",
+              "href": "string",
+              "appointmentRequired": true,
+              "appointment": [
+                {
+                  "href": "string",
+                  "id": "string"
+                }
+              ],
+              "duration": {
+                "timeDurationValue": 0,
+                "timeDurationUnits": "NS"
+              },
+              "note": [
+                {
+                  "author": "string",
+                  "date": "2023-11-19T13:45:37.564Z",
+                  "id": "string",
+                  "source": "buyer",
+                  "text": "string"
+                }
+              ],
+              "place": [
+                {
+                  "@schemaLocation": "string",
+                  "role": "string"
+                }
+              ],
+              "plannedExecutionDate": "2023-11-19T13:45:37.564Z",
+              "relatedContactInformation": [
+                {
+                  "emailAddress": "string",
+                  "name": "string",
+                  "number": "string",
+                  "numberExtension": "string",
+                  "organization": "string",
+                  "postalAddress": {
+                    "@schemaLocation": "string",
+                    "@type": "FieldedAddress",
+                    "role": "string",
+                    "city": "string",
+                    "country": "string",
+                    "geographicSubAddress": {
+                      "buildingName": "string",
+                      "id": "string",
+                      "levelNumber": "string",
+                      "levelType": "string",
+                      "privateStreetName": "string",
+                      "privateStreetNumber": "string",
+                      "subUnit": [
+                        {
+                          "subUnitNumber": "string",
+                          "subUnitType": "string"
+                        }
+                      ]
+                    },
+                    "locality": "string",
+                    "postcode": "string",
+                    "postcodeExtension": "string",
+                    "stateOrProvince": "string",
+                    "streetName": "string",
+                    "streetNr": "string",
+                    "streetNrLast": "string",
+                    "streetNrLastSuffix": "string",
+                    "streetNrSuffix": "string",
+                    "streetSuffix": "string",
+                    "streetType": "string"
+                  },
+                  "role": "string"
+                }
+              ],
+              "relatedEntity": [
+                {
+                  "@referredType": "Product",
+                  "href": "string",
+                  "id": "string",
+                  "role": "string"
+                }
+              ],
+              "state": "cancelled",
+              "task": [
+                "string"
+              ]
+            }
+            }
+        }
+    },
+  "productofferingqualification_list_response_200": {
+    "description": "OK. (https://tools.ietf.org/html/rfc7231#section-6.3.1)",
+    "content": {
+        "application/json;charset=utf-8": {
+            "schema": {
+                "$ref": "#/components/schemas/ProductOfferingQualification_Find"
+            },
+            "example":
+            {
+              "id": "string",
+              "externalId": "string",
+              "state": "acknowledged",
+              "projectId": "string",
+              "requestedPOQCompletionDate": "2023-11-29"
+            }
+            }
+        }
+    },
+    "response_productOfferingQualification_201": {
+      "description": "Created. (https://tools.ietf.org/html/rfc7231#section-6.3.2)",
+      "content": {
+          "application/json;charset=utf-8": {
+              "schema":{
+                  "$ref": "#/components/schemas/ProductOfferingQualification"
+              },
+              "example":{
+                "externalId": "string",
+                "instantSyncQualification": false,
+                "relatedContactInformation": [
+                  {
+                    "number": "string",
+                    "emailAddress": "string",
+                    "role": "string",
+                    "postalAddress": {
+                      "role": "string",
+                      "@type": "FieldedAddress",
+                      "@schemaLocation": "string",
+                      "country": "string",
+                      "streetType": "string",
+                      "postcodeExtension": "string",
+                      "city": "string",
+                      "streetNr": "string",
+                      "locality": "string",
+                      "postcode": "string",
+                      "streetNrLast": "string",
+                      "streetNrSuffix": "string",
+                      "streetName": "string",
+                      "stateOrProvince": "string",
+                      "streetNrLastSuffix": "string",
+                      "geographicSubAddress": {
+                        "buildingName": "string",
+                        "subUnit": [
+                          {
+                            "subUnitNumber": "string",
+                            "subUnitType": "string"
+                          }
+                        ],
+                        "levelType": "string",
+                        "levelNumber": "string",
+                        "privateStreetNumber": "string",
+                        "privateStreetName": "string"
+                      },
+                      "streetSuffix": "string"
+                    },
+                    "organization": "string",
+                    "name": "string",
+                    "numberExtension": "string"
+                  }
+                ],
+                "provideAlternative": false,
+                "projectId": "string",
+                "requestedPOQCompletionDate": "2023-11-27T07:32:32.811Z",
+                "productOfferingQualificationItem": [
+                  {
+                    "product": {
+                      "productSpecification": {
+                        "href": "string",
+                        "id": "string"
+                      },
+                      "productOffering": {
+                        "href": "string",
+                        "id": "string"
+                      },
+                      "productConfiguration": {
+                        "@type": "string"
+                      },
+                      "productRelationship": [
+                        {
+                          "relationshipType": "string",
+                          "href": "string",
+                          "id": "string",
+                          "groupingKey": "string"
+                        }
+                      ],
+                      "href": "string",
+                      "id": "string",
+                      "place": [
+                        {
+                          "role": "string",
+                          "@schemaLocation": "string"
+                        }
+                      ]
+                    },
+                    "qualificationItemRelationship": [
+                      {
+                        "relationshipType": "string",
+                        "id": "string"
+                      }
+                    ],
+                    "relatedContactInformation": [
+                      {
+                        "number": "string",
+                        "emailAddress": "string",
+                        "role": "string",
+                        "postalAddress": {
+                          "role": "string",
+                          "@type": "FieldedAddress",
+                          "@schemaLocation": "string",
+                          "country": "string",
+                          "streetType": "string",
+                          "postcodeExtension": "string",
+                          "city": "string",
+                          "streetNr": "string",
+                          "locality": "string",
+                          "postcode": "string",
+                          "streetNrLast": "string",
+                          "streetNrSuffix": "string",
+                          "streetName": "string",
+                          "stateOrProvince": "string",
+                          "streetNrLastSuffix": "string",
+                          "geographicSubAddress": {
+                            "buildingName": "string",
+                            "subUnit": [
+                              {
+                                "subUnitNumber": "string",
+                                "subUnitType": "string"
+                              }
+                            ],
+                            "levelType": "string",
+                            "levelNumber": "string",
+                            "privateStreetNumber": "string",
+                            "privateStreetName": "string"
+                          },
+                          "streetSuffix": "string"
+                        },
+                        "organization": "string",
+                        "name": "string",
+                        "numberExtension": "string"
+                      }
+                    ],
+                    "action": "add",
+                    "id": "string",
+                    "terminationError": [
+                      {
+                        "code": "missingProperty",
+                        "propertyPath": "string",
+                        "value": "string"
+                      }
+                    ],
+                    "serviceabilityConfidence": "green",
+                    "serviceabilityConfidenceReason": "string",
+                    "alternateProductOfferingProposal": [
+                      {
+                        "installationInterval": {
+                          "amount": 0,
+                          "units": "calendarMonths"
+                        },
+                        "id": "string",
+                        "alternateProduct": {
+                          "productSpecification": {
+                            "href": "string",
+                            "id": "string"
+                          },
+                          "productOffering": {
+                            "href": "string",
+                            "id": "string"
+                          },
+                          "productConfiguration": {
+                            "@type": "string"
+                          }
+                        }
+                      }
+                    ],
+                    "installationInterval": {
+                      "amount": 0,
+                      "units": "calendarMonths"
+                    },
+                    "guaranteedUntilDate": "2023-11-27T07:32:32.811Z",
+                    "stateChange": [
+                      {
+                        "changeReason": "string",
+                        "changeDate": "2023-11-27T07:32:32.811Z",
+                        "state": "acknowledged"
+                      }
+                    ],
+                    "state": "acknowledged"
+                  }
+                ],
+                "effectiveQualificationDate": "2023-11-27T07:32:32.811Z",
+                "expectedPOQCompletionDate": "2023-11-27T07:32:32.811Z",
+                "stateChange": [
+                  {
+                    "changeReason": "string",
+                    "changeDate": "2023-11-27T07:32:32.811Z",
+                    "state": "acknowledged"
+                  }
+                ],
+                "href": "string",
+                "id": "string",
+                "state": "acknowledged"
+              }
+            }
+          }
+        },
+        "response_troubleticket_201": {
+          "description": "Created. (https://tools.ietf.org/html/rfc7231#section-6.3.2)",
+          "content": {
+              "application/json;charset=utf-8": {
+                  "schema":{
+                      "$ref": "#/components/schemas/TroubleTicket"
+                  },
+                  "example":{
+                    "attachment": [
+                      {
+                        "attachmentId": "string",
+                        "author": "string",
+                        "content": "string",
+                        "creationDate": "2023-12-27T11:44:39.494Z",
+                        "description": "string",
+                        "mimeType": "string",
+                        "name": "string",
+                        "size": {
+                          "amount": 1,
+                          "units": "BYTES"
+                        },
+                        "source": "buyer",
+                        "url": "string"
+                      }
+                    ],
+                    "description": "string",
+                    "externalId": "string",
+                    "issueStartDate": "2023-12-27T11:44:39.494Z",
+                    "note": [
+                      {
+                        "author": "string",
+                        "date": "2023-12-27T11:44:39.494Z",
+                        "id": "string",
+                        "source": "buyer",
+                        "text": "string"
+                      }
+                    ],
+                    "observedImpact": "degraded",
+                    "priority": "low",
+                    "relatedContactInformation": [
+                      {
+                        "emailAddress": "string",
+                        "name": "string",
+                        "number": "string",
+                        "numberExtension": "string",
+                        "organization": "string",
+                        "postalAddress": {
+                          "country": "string",
+                          "streetType": "string",
+                          "postcodeExtension": "string",
+                          "city": "string",
+                          "streetNr": "string",
+                          "locality": "string",
+                          "postcode": "string",
+                          "streetNrLast": "string",
+                          "streetNrSuffix": "string",
+                          "streetName": "string",
+                          "stateOrProvince": "string",
+                          "streetNrLastSuffix": "string",
+                          "geographicSubAddress": {
+                            "buildingName": "string",
+                            "id": "string",
+                            "levelNumber": "string",
+                            "levelType": "string",
+                            "privateStreetName": "string",
+                            "privateStreetNumber": "string",
+                            "subUnit": [
+                              {
+                                "subUnitNumber": "string",
+                                "subUnitType": "string"
+                              }
+                            ]
+                          },
+                          "streetSuffix": "string"
+                        },
+                        "role": "string"
+                      }
+                    ],
+                    "relatedEntity": [
+                      {
+                        "@referredType": "Product",
+                        "href": "string",
+                        "id": "string",
+                        "role": "string"
+                      }
+                    ],
+                    "relatedIssue": [
+                      {
+                        "@referredType": "string",
+                        "creationDate": "2023-12-27T11:44:39.494Z",
+                        "description": "string",
+                        "href": "string",
+                        "id": "string",
+                        "relationshipType": "string",
+                        "source": "buyer"
+                      }
+                    ],
+                    "severity": "minor",
+                    "ticketType": "assistance",
+                    "creationDate": "2023-12-27T11:44:39.494Z",
+                    "expectedResolutionDate": "2023-12-27T11:44:39.494Z",
+                    "href": "string",
+                    "id": "string",
+                    "resolutionDate": "2023-12-27T11:44:39.494Z",
+                    "sellerPriority": "low",
+                    "sellerSeverity": "minor",
+                    "status": "acknowledged",
+                    "statusChange": [
+                      {
+                        "changeDate": "2023-12-27T11:44:39.494Z",
+                        "changeReason": "string",
+                        "status": "acknowledged"
+                      }
+                    ],
+                    "workOrder": [
+                      {
+                        "href": "string",
+                        "id": "string"
+                      }
+                    ]
+                  }
+              }
+            }
+          },
+          "list_response_troubleticket_200": {
+            "description": "Created. (https://tools.ietf.org/html/rfc7231#section-6.3.2)",
+            "content": {
+                "application/json;charset=utf-8": {
+                    "schema":{
+                        "$ref": "#/components/schemas/TroubleTicket"
+                    },
+                    "example":
+                      [
+                        {
+                          "creationDate": "2024-01-02T11:42:05.320Z",
+                          "description": "string",
+                          "expectedResolutionDate": "2024-01-02T11:42:05.320Z",
+                          "externalId": "string",
+                          "id": "string",
+                          "priority": "low",
+                          "relatedEntity": [
+                            {
+                              "@referredType": "Product",
+                              "href": "string",
+                              "id": "string",
+                              "role": "string"
+                            }
+                          ],
+                          "observedImpact": "degraded",
+                          "resolutionDate": "2024-01-02T11:42:05.320Z",
+                          "sellerPriority": "low",
+                          "sellerSeverity": "minor",
+                          "severity": "minor",
+                          "status": "acknowledged",
+                          "ticketType": "assistance"
+                        }
+                      ]
+
+                     
+                }   
+            }
+          }    
+ 
+}

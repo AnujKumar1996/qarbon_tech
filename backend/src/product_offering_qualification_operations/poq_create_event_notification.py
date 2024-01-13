@@ -1,0 +1,115 @@
+import json
+from pathlib import Path
+from fastapi import Response, status
+from src.common.exceptions import raise_exception
+
+def product_offering_qualification_createEvent_notification(info):
+
+    try:
+        
+        cwd = Path(__file__).parents[1]
+        product_offering_qualification_file="product_offering_qualification.json"
+        
+        poq_response_filename = cwd / "responses" / product_offering_qualification_file
+        
+        if not poq_response_filename.exists() :
+            status_msg_code = 404
+            message = f"File not found: '{product_offering_qualification_file}'"
+            reason = "File not found"
+            reference_error = None
+            message_code = "notFound"
+            property_path = None
+            
+            return raise_exception(status_msg_code, message, reason, reference_error, message_code, property_path)
+
+        try:
+            with open(poq_response_filename, "r") as json_file:
+                data_json = json.load(json_file)
+        
+        except json.JSONDecodeError as e:
+            status_msg_code = 404
+            message = "Record not found"
+            reason = "Record not found"
+            reference_error = None
+            message_code = "notFound"
+            property_path = None
+            
+            return raise_exception(status_msg_code, message, reason, reference_error, message_code, property_path)
+            
+        if info.eventType != "poqCreateEvent":
+            status_msg_code = 422
+            message = "The eventType must be 'poqCreateEvent'"
+            reason = "Validation error"
+            reference_error = None
+            message_code = "invalidValue"
+            property_path = "eventType"
+                
+            return raise_exception(status_msg_code, message, reason, reference_error, message_code, property_path)
+            
+        list_of_keys = data_json.keys()  
+        if info.event.id not in list_of_keys :
+            status_msg_code = 422
+            message = f"Invalid id '{info.event.id}'"
+            reason = "Validation error"
+            reference_error = None
+            message_code = "invalidValue"
+            property_path = "event.id"
+            
+            return raise_exception(status_msg_code, message, reason, reference_error, message_code, property_path)
+        
+        else:
+            poq_data=data_json[info.event.id]
+            
+            if info.event.sellerId != "" and poq_data["sellerId"] != info.event.sellerId:
+                status_msg_code = 422
+                message = f"Invalid sellerId '{info.event.sellerId}'"
+                reason = "Validation error"
+                reference_error = None
+                message_code = "invalidValue"
+                property_path = "event.sellerId"
+                
+                return raise_exception(status_msg_code, message, reason, reference_error, message_code, property_path)
+
+            if info.event.poqItemId != "":
+                product_order_items = poq_data.get("productOfferingQualificationItem")
+                product_ids = [item.get("id") for item in product_order_items]
+                if info.event.poqItemId not in product_ids:
+                    status_msg_code = 422
+                    message = f"Invalid poqItemId '{info.event.poqItemId}'"
+                    reason = "Validation error"
+                    reference_error = None
+                    message_code = "invalidValue"
+                    property_path = "event.poqItemId"
+                    return raise_exception(status_msg_code, message, reason, reference_error, message_code, property_path)
+                       
+            if info.event.buyerId != "" and poq_data["buyerId"]!=info.event.buyerId:
+                status_msg_code = 422
+                message = f"Invalid buyerId '{info.event.buyerId}'"
+                reason = "Validation error"
+                reference_error = None
+                message_code = "invalidValue"
+                property_path = "event.buyerId"
+                
+                return raise_exception(status_msg_code, message, reason, reference_error, message_code, property_path)
+
+            if info.event.href != "" and poq_data["href"]!=info.event.href:
+                status_msg_code = 422
+                message = f"Invalid href '{info.event.href}'"
+                reason = "Validation error"
+                reference_error = None
+                message_code = "invalidValue"
+                property_path = "event.href"
+                
+                return raise_exception(status_msg_code, message, reason, reference_error, message_code, property_path)
+            
+            return Response(status_code=status.HTTP_204_NO_CONTENT,media_type="application/json;charset=utf-8")
+                
+    except Exception as err:
+        status_msg_code = 500
+        message = str(err)
+        reason = "The server encountered an unexpected condition that prevented it from fulfilling the request"
+        reference_error = None
+        message_code = "internalError"
+        property_path = None
+        
+        return raise_exception(status_msg_code, message, reason, reference_error, message_code, property_path)

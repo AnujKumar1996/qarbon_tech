@@ -1,0 +1,55 @@
+{
+    "id": "00001111-4321-6666-7777-000000003333",
+    "href": "{{baseUrl}}/incident/00001111-4321-6666-7777-000000003333",
+    "attachment": [
+        {
+            "attachmentId": "att-002",
+            "author": "Kate Example",
+            "creationDate": "2022-01-02T14:21:11.090Z",
+            "description": "Print screen from the assurance system",
+            "mimeType": "image/jpeg",
+            "name": "Alarm",
+            "url": "https://example.com/documents/00000000-5555-4444-3333-222211110000",
+            "size": {
+                "amount": 2.6,
+                "units": "MBYTES"
+            },
+            "source": "seller"
+        }
+    ],
+    "creationDate": "2022-01-12T23:09:44.814Z",
+    "description": "Hardware failure",
+    "expectedClosedDate": "2022-01-13T23:09:44.814Z",
+    "impact": "down",
+    "incidentType": "repair",
+    "situationStartDate": "2022-01-12T23:09:44.814Z",
+    "priority": "critical",
+    "relatedContactInformation": [
+        {
+            "emailAddress": "Incident.Contact@example.com",
+            "name": "Incident Contact",
+            "number": "+98-765-432-10",
+            "organization": "Seller Example Co.",
+            "role": "incidentContact"
+        }
+    ],
+    "relatedEntity": [
+        {
+            "id": "01494079-6c79-4a25-83f7-48284196d44d",
+            "role": "Affected Product",
+            "@referredType": "Product"
+        }
+    ],
+    "relatedIssue": [
+        {
+            "@referredType": "TroubleTicket",
+            "creationDate": "2022-01-12T23:09:44.815Z",
+            "description": "Reported failure is causing referred Trouble Ticket",
+            "id": "00000000-4444-5555-6666-000000000987",
+            "relationshipType": "causes",
+            "source": "seller"
+        }
+    ],
+    "severity": "extensive",
+    "status": "created"
+}

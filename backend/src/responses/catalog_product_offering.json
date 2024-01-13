@@ -1,0 +1,99 @@
+{
+    "productOffering-1": {
+        "id": "productOffering-1",
+        "href": "http://mef.com:8080/mefApi/sonata/productCatalog/v1/productOffering/productOffering-1",
+        "name": "Access E-line OVC Basic",
+        "lastUpdate": "2023-01-19T16:33:20.324Z",
+        "lifecycleStatus": "orderable",
+        "description": "Signed contract",
+        "agreement": "Official agreement no 4",
+        "buyerId": "buyer-001",
+        "sellerId": "seller-001",
+        "channel": [
+            "DirectSales",
+            "Distribution"
+        ],
+        "marketSegment": [
+            "Federal",
+            "Financial"
+        ],
+        "region": [
+            {
+                "stateOrProvince": "Malopolskie",
+                "country": "Poland"
+            }
+        ],
+        "category": [
+            {
+                "id": "productCategory-2",
+                "href": "http://mef.com:8080/mefApi/sonata/productCatalog/v1/category/productCategory-2"
+            }
+        ],
+        "statusTransitions": [
+            {
+                "transitionDate": "2024-01-19T16:33:20.324Z",
+                "transitionLifecycleStatus": "obsolete"
+            }
+        ],
+        "productOfferingStatusReason": "Ready to be used for ordering.",
+        "attachment": [
+            {
+                "attachmentId": "4e5b3701-47f8-47a7-bcf8-d3d740b4cd60",
+                "author": "John Doe",
+                "creationDate": "2023-01-19T16:33:20.324Z",
+                "description": "Signed contract",
+                "mimeType": "application/pdf",
+                "name": "Customers contract",
+                "size": {
+                    "amount": 105.0,
+                    "units": "kbytes"
+                },
+                "source": "buyer",
+                "url": "http://some-domain.com/attachment/file/4e5b3701-47f8-47a7-bcf8-d3d740b4cd60"
+            }
+        ],
+        "relatedContactInformation": null,
+        "productOfferingTerm": [
+            {
+                "description": "Basic Term",
+                "duration": {
+                    "amount": 12,
+                    "units": "calendarMonths"
+                },
+                "endOfTermAction": "roll",
+                "name": "Basic",
+                "rollInterval": {
+                    "amount": 6,
+                    "units": "calendarMonths"
+                }
+            }
+        ],
+        "note": [
+            {
+                "author": "John Doe",
+                "date": "2023-01-19T16:33:20.324Z",
+                "id": "43072c06-34ac-4713-b0b1-371cb7479400",
+                "source": "buyer",
+                "text": "Lorem ipsum"
+            }
+        ],
+        "productSpecification": {
+            "id": "productSpecification-1",
+            "href": "http://mef.com:8080/mefApi/sonata/productCatalog/v1/productSpecification/productSpecification-1"
+        },
+        "productOfferingContextualInfo": [
+            {
+                "contextSchema": {
+                    "schemaLocation": "string"
+                },
+                "context": {
+                    "productAction": "all",
+                    "businessFunction": "all"
+                }
+            }
+        ],
+        "productOfferingSpecification": {
+            "schema": "productOfferingSpecification"
+        }
+    }
+}

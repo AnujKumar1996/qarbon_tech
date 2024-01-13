@@ -1,0 +1,323 @@
+{
+    "productorder_payloads": {
+        "id": "order-001",
+        "state": "acknowledged",
+        "cancellationDate": "2023-10-04T09:43:40.165Z",
+        "cancellationReason": "reason for cancel the product",
+        "cancellationReasonType": "technical",
+        "completionDate": "2023-08-16T14:39:06.165Z",
+        "href": "https://tools.ietf.org",
+        "product": {
+            "id": "pid-01"
+        },
+        "cancellationCharge": [
+            {
+                "href": "https://charge.link.org",
+                "id": "charge-001"
+            }
+        ],
+        "stateChange": [
+            {
+                "changeDate": "2023-08-22T17:37:40.710Z",
+                "changeReason": "string",
+                "state": "acknowledged"
+            }
+        ],
+        "productOrderItem": {
+            "charge": [
+                {
+                    "href": "string",
+                    "id": "string"
+                }
+            ],
+            "completionDate": "2023-08-22T17:47:10.799Z",
+            "expectedCompletionDate": "2023-08-22T17:47:10.799Z",
+            "expediteAcceptedIndicator": false,
+            "itemTerm": [
+                {
+                    "description": "string",
+                    "duration": {
+                        "amount": 1,
+                        "units": "calendarMonths"
+                    },
+                    "endOfTermAction": "roll",
+                    "name": "string",
+                    "rollInterval": {
+                        "amount": 1,
+                        "units": "calendarMonths"
+                    }
+                }
+            ],
+            "milestone": [
+                {
+                    "date": "2023-08-22T17:47:10.799Z",
+                    "name": "mile stone string",
+                    "note": "string"
+                }
+            ],
+            "state": "acknowledged",
+            "stateChange": [
+                {
+                    "changeDate": "2023-08-22T17:47:10.799Z",
+                    "changeReason": "string",
+                    "state": "acknowledged"
+                }
+            ],
+            "terminationError": [
+                {
+                    "code": "missingProperty",
+                    "propertyPath": "string",
+                    "value": "string"
+                }
+            ]
+        }
+    },
+    "cancel_order_payload": {
+        "cancellationDeniedReason": "A technical reason for cancelling the ProductOrder",
+        "relatedContactInformation": [
+            {
+                "emailAddress": "Seller.Contact@example.com",
+                "name": "Seller Contact",
+                "number": "+12-345-678-90",
+                "organization": "seller",
+                "role": "cancelProductOrderSellerContact"
+            }
+        ],
+        "charge": {
+            "//first_comment": "Way to add comments in JSON file, Key should be unique and starte with //",
+            "href": "string",
+            "id": "cancelcharge-01"
+        },
+        "href": "https://tools.ietf.org",
+        "id": "cancel_id-01",
+        "state": "acknowledged"
+    },
+    "events_subscription": {
+        "id": "subId-001"
+    },
+    "modify_order_payload": {
+        "href": "https://href.example.com",
+        "id": "modify_order-001",
+        "order_state": "pending.assessingModification",
+        "order_item_state": "pending",
+        "state": "acknowledged"
+    },
+    "appointment": {
+        "id": "appointment-001",
+        "href": "https://tools.ietf.org",
+        "status": "confirmed",
+        "relatedPlace": {
+            "@schemaLocation": "https://appointment/",
+            "@type": "FieldedAddress",
+            "role": "adminUser"
+        }
+    },
+    "poq_payload": {
+        "id": "order-001",
+        "effectiveQualificationDate": "",
+        "expectedPOQCompletionDate": "",
+        "stateChange": [
+            {
+                "changeReason": "",
+                "changeDate": "",
+                "state": "acknowledged"
+            }
+        ],
+        "href": "",
+        "state": "acknowledged",
+        "productOfferingQualificationItem": [
+            {
+                "terminationError": [
+                    {
+                        "code": "",
+                        "propertyPath": "",
+                        "value": ""
+                    }
+                ],
+                "serviceabilityConfidence": "green",
+                "serviceabilityConfidenceReason": "",
+                "alternateProductOfferingProposal": [
+                    {
+                        "installationInterval": {
+                            "amount": 10,
+                            "units": "calendarMonths"
+                        },
+                        "id": "",
+                        "alternateProduct": {
+                            "productSpecification": {
+                                "href": "",
+                                "id": ""
+                            },
+                            "productOffering": {
+                                "href": "",
+                                "id": ""
+                            },
+                            "productConfiguration": {
+                                "type": ""
+                            }
+                        }
+                    }
+                ],
+                "installationInterval": {
+                    "amount": 0,
+                    "units": "calendarMonths"
+                },
+                "guaranteedUntilDate": "",
+                "stateChange": [
+                    {
+                        "changeReason": "",
+                        "changeDate": "",
+                        "state": "acknowledged"
+                    }
+                ],
+                "state": "acknowledged"
+            }
+        ]
+    },
+    "searchTimeSlot_201": {
+        "id": "timeSlot-001",
+        "availableTimeSlot": [
+            {
+                "validFor": {
+                    "endDateTime": "2023-12-28T20:55:05.836Z",
+                    "startDateTime": "2023-12-28T16:38:26.693Z"
+                }
+            }
+        ]
+    },
+    "productorder_disconnect": {
+        "state": "failed"
+    },
+    "geographicvalidationadress_payload": {
+        "id": "geographicvalidationadress-001",
+        "validationResult": "success",
+        "alternateGeographicAddress": [
+            {
+                "hasPublicSite": false,
+                "@type": "FieldedAddress",
+                "allowsNewSite": false,
+                "id": "alternateGeographicAddress-1",
+                "href": "https://example.com/address/123456789",
+                "@schemaLocation": "https://schemas.example.com/fielded-address-schema",
+                "associatedGeographicAddress": {
+                    "@schemaLocation": "https://schemas.example.com/fielded-address-schema",
+                    "@type": "FieldedAddress",
+                    "role": "systemAdmin",
+                    "city": "Cityville",
+                    "country": "Countryland",
+                    "geographicSubAddress": {
+                        "buildingName": "Sunrise Towers",
+                        "levelNumber": "10",
+                        "levelType": "Floor",
+                        "privateStreetName": "Maple Street",
+                        "privateStreetNumber": "123",
+                        "subUnit": [
+                            {
+                                "subUnitNumber": "A",
+                                "subUnitType": "Apartment"
+                            }
+                        ]
+                    },
+                    "locality": "Suburbia",
+                    "postcode": "12345",
+                    "postcodeExtension": "-6789",
+                    "stateOrProvince": "Stateland",
+                    "streetName": "Main Street",
+                    "streetNr": "456",
+                    "streetNrLast": "yallanak",
+                    "streetNrLastSuffix": "k",
+                    "streetNrSuffix": "B",
+                    "streetSuffix": "Ave",
+                    "streetType": "Road"
+                }
+            }
+        ],
+        "bestMatchGeographicAddress": {
+            "hasPublicSite": true,
+            "@type": "FieldedAddress",
+            "allowsNewSite": true,
+            "id": "bestMatchGeographicAddress-001",
+            "href": "https://example.com/best-match-address",
+            "@schemaLocation": "https://schemas.example.com/fielded-address-schema",
+            "associatedGeographicAddress": {
+                "@schemaLocation": "https://schemas.example.com/fielded-address-schema",
+                "@type": "FieldedAddress",
+                "role": "systemAdmin",
+                "city": "Kurnool",
+                "country": "India",
+                "geographicSubAddress": {
+                    "buildingName": "Sunset Residency",
+                    "levelNumber": "3",
+                    "levelType": "Floor",
+                    "privateStreetName": "Oak Street",
+                    "privateStreetNumber": "789",
+                    "subUnit": [
+                        {
+                            "subUnitNumber": "C",
+                            "subUnitType": "Office"
+                        }
+                    ]
+                },
+                "locality": "Downtown",
+                "postcode": "56789",
+                "postcodeExtension": "-1234",
+                "stateOrProvince": "Andhra Pradesh",
+                "streetName": "Main Boulevard",
+                "streetNr": "321",
+                "streetNrLast": "322",
+                "streetNrLastSuffix": "B",
+                "streetNrSuffix": "D",
+                "streetSuffix": "Ave",
+                "streetType": "Street"
+            }
+        }
+    },
+    "troubleTicket_payload": {
+        "id": "order-001",
+        "creationDate": "2023-12-29T07:35:23.872Z",
+        "resolutionDate": "2023-12-29T07:35:23.872Z",
+        "expectedResolutionDate": "2023-12-29T07:35:23.872Z",
+        "sellerPriority": "medium",
+        "sellerSeverity": "moderate",
+        "relatedContactInformation": [
+            {
+                "emailAddress": "string",
+                "name": "string",
+                "number": "string",
+                "numberExtension": "string",
+                "organization": "string",
+                "postalAddress": {
+                    "country": "string",
+                    "streetType": "string",
+                    "postcodeExtension": "string",
+                    "city": "string",
+                    "streetNr": "string",
+                    "locality": "string",
+                    "postcode": "string",
+                    "streetNrLast": "string",
+                    "streetNrSuffix": "string",
+                    "streetName": "string",
+                    "stateOrProvince": "string",
+                    "streetNrLastSuffix": "string",
+                    "geographicSubAddress": {
+                        "buildingName": "string",
+                        "id": "string",
+                        "levelNumber": "string",
+                        "levelType": "string",
+                        "privateStreetName": "string",
+                        "privateStreetNumber": "string",
+                        "subUnit": [
+                            {
+                                "subUnitNumber": "string",
+                                "subUnitType": "string"
+                            }
+                        ]
+                    },
+                    "streetSuffix": "string"
+                },
+                "role": "sellerTicketContact"
+            }
+        ],
+        "status": "acknowledged"
+    }
+}

@@ -1,0 +1,96 @@
+{
+    "geographicsite-001": {
+        "hasPublicSite": true,
+        "@type": "FieldedAddress",
+        "allowsNewSite": true,
+        "id": "geographicsite-001",
+        "href": "/geographic-sites/geographicsite-001",
+        "@schemaLocation": "http://example.com/schemas/geographic-site",
+        "associatedGeographicAddress": {
+            "@schemaLocation": "http://example.com/schemas/associated-geographic-address",
+            "@type": "FieldedAddress",
+            "role": "publicArea",
+            "city": "Bangalore",
+            "country": "India",
+            "geographicSubAddress": {
+                "buildingName": "Building A",
+                "levelNumber": "1",
+                "levelType": "Floor",
+                "privateStreetName": "Private Street",
+                "privateStreetNumber": "123",
+                "subUnit": [
+                    {
+                        "subUnitNumber": "A",
+                        "subUnitType": "Apartment"
+                    },
+                    {
+                        "subUnitNumber": "B",
+                        "subUnitType": "Apartment"
+                    }
+                ]
+            },
+            "locality": "Yelahanka",
+            "postcode": "560063",
+            "postcodeExtension": "6789",
+            "stateOrProvince": "Karnataka",
+            "streetName": "Main Street",
+            "streetNr": "42",
+            "streetNrLast": "43",
+            "streetNrLastSuffix": "B",
+            "streetNrSuffix": "C",
+            "streetSuffix": "Avenue",
+            "streetType": "Road"
+        },
+        "sellerId": "sellerId-001",
+       "buyerId": "buyerId-001"
+    },
+    
+        "geographicsite-002": {
+            "hasPublicSite": true,
+            "@type": "FieldedAddress",
+            "allowsNewSite": true,
+            "id": "geographicsite-002",
+            "href": "/geographic-sites/geographicsite-002",
+            "@schemaLocation": "http://example.com/schemas/geographic-site",
+            "associatedGeographicAddress": {
+                "@schemaLocation": "http://example.com/schemas/associated-geographic-address",
+                "@type": "FieldedAddress",
+                "role": "residentialArea",
+                "city": "Delhi",
+                "country": "India",
+                "geographicSubAddress": {
+                    "buildingName": "Sky Towers",
+                    "levelNumber": "5",
+                    "levelType": "Floor",
+                    "privateStreetName": "Main Street",
+                    "privateStreetNumber": "456",
+                    "subUnit": [
+                        {
+                            "subUnitNumber": "A",
+                            "subUnitType": "Apartment"
+                        },
+                        {
+                            "subUnitNumber": "B",
+                            "subUnitType": "Apartment"
+                        }
+                    ]
+                },
+                "locality": "Connaught Place",
+                "postcode": "110001",
+                "postcodeExtension": "5678",
+                "stateOrProvince": "Delhi NCR",
+                "streetName": "Broadway",
+                "streetNr": "123",
+                "streetNrLast": "124",
+                "streetNrLastSuffix": "C",
+                "streetNrSuffix": "D",
+                "streetSuffix": "Street",
+                "streetType": "Lane"
+            },
+            "sellerId": "sellerId-002",
+            "buyerId": "buyerId-002"
+        }
+
+    }
+    
+

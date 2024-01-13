@@ -1,0 +1,33 @@
+{
+    "productCategory-1": {
+        "id": "productCategory-1",
+        "href": "http://mef.com:8080/mefApi/sonata/productCatalog/v1/productCategory/productCategory-1",
+        "name": "Access E-Lines Product Offerings",
+        "description": "This category groups are available Access E-Line Product Offerings",
+        "lastUpdate": "2023-01-19T16:33:20.324Z",
+        "lifecycleStatus": "active",
+        "parentCategory": {
+            "id": "productCategory-1",
+            "href": "http://mef.com:8080/mefApi/sonata/productCatalog/v1/category/productCategory-1"
+        },
+        "subCategory": [
+            {
+                "id": "subCategory-1",
+                "href": "http://mef.com:8080/mefApi/sonata/productCatalog/v1/subCategory-1"
+            }
+        ],
+        "productOffering": [
+            {
+                "id": "productOffering-1",
+                "href": "http://mef.com:8080/mefApi/sonata/productCatalog/v1/productOffering/productOffering-1"
+            },
+            {
+                "id": "productOffering-2",
+                "href": "http://mef.com:8080/mefApi/sonata/productCatalog/v1/productOffering/productOffering-2"
+            }
+        ],
+        "sellerId": "sellerId-001",
+        "buyerId": "buyerId-001",
+        "previousLifecycleStatus": "active"
+    }
+}

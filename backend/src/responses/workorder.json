@@ -1,0 +1,119 @@
+{
+    "98765432-9876-5432-0000-000000000001": {
+        "id": "98765432-9876-5432-0000-000000000001",
+        "appointmentRequired": true,
+        "href": "https://example.com/appointments/1",
+        "place": [
+            {
+                "@schemaLocation": "example.com/path/to/example-schema1.json",
+                "@type": "GeographicAddressRef1",
+                "role": "APPOINTMENT_LOCATION1",
+                "geographicalSiteId": "example geographicalSiteId 1",
+                "geographicalAddressId": "example geographicalAddressId 1"
+            }
+        ],
+        "relatedContactInformation": [
+            {
+                "emailAddress": "technical.contact@example.com",
+                "name": "Technical Contact",
+                "number": "+12-345-678-91",
+                "organization": "Seller Example Co.",
+                "role": "technicalContact"
+            }
+        ],
+        "relatedEntity": [
+            {
+                "id": "01494064-6c79-4a32-83f7-53284196d35e",
+                "role": "parentTroubleTicket 1",
+                "@referredType": "TroubleTicket1",
+                "href": "https://example.com/appointments/1"
+            }
+        ],
+        "state": "open",
+        "plannedExecutionDate": "2022-05-20T10:04:18.812Z",
+        "task": [
+            "Replace the broken SFP",
+            "Perform OTDR"
+        ],
+        "duration": {
+            "timeDurationValue": 20,
+            "timeDurationUnits": "ms"
+        },
+        "note": [
+            {
+                "author": "John Doe 001",
+                "date": "2022-11-29T16:33:20.324Z",
+                "id": "43072c06-34ac-4713-b0b1-371cb7479400",
+                "source": "buyer",
+                "text": "Lorem ipsum"
+            }
+        ],
+        "appointment": [
+            {
+                "href": "https://example.com/appointments/1",
+                "id": "1"
+            }
+        ],
+        "buyerId": "buyer-001",
+        "sellerId": "seller-001"
+    },
+    "98765432-9876-5432-0000-000000000002": {
+        "id": "98765432-9876-5432-0000-000000000002",
+        "appointmentRequired": true,
+        "href": "https://example.com/appointments/1",
+        "place": [
+            {
+                "@schemaLocation": "example.com/path/to/example-schema2.json",
+                "@type": "GeographicAddressRef2",
+                "role": "APPOINTMENT_LOCATION2",
+                "geographicalSiteId": "example geographicalSiteId 2",
+                "geographicalAddressId": "example geographicalAddressId 2"
+            }
+        ],
+        "relatedContactInformation": [
+            {
+                "emailAddress": "technical.contact@example.com",
+                "name": "Technical Contact",
+                "number": "+12-345-678-91",
+                "organization": "Seller Example Co.",
+                "role": "technicalContact"
+            }
+        ],
+        "relatedEntity": [
+            {
+                "id": "01494064-6c79-4a32-83f7-53284196d35d",
+                "role": "parentTroubleTicket 2",
+                "@referredType": "TroubleTicket2",
+                "href": "https://example.com/appointments/2"
+            }
+        ],
+        "state": "open",
+        "plannedExecutionDate": "2022-05-20T10:04:18.812Z",
+        "task": [
+            "Replace the broken SFP",
+            "Perform OTDR"
+        ],
+        "duration": {
+            "timeDurationValue": 20,
+            "timeDurationUnits": "ms"
+        },
+        "note": [
+            {
+                "author": "John Doe 002",
+                "date": "2022-11-29T16:33:20.324Z",
+                "id": "43072c06-34ac-4713-b0b1-371cb7479400",
+                "source": "buyer",
+                "text": "Lorem ipsum"
+            }
+        ],
+        "appointment": [
+            {
+                "href": "https://example.com/appointments/1",
+                "id": "1"
+            }
+        ],
+        "buyerId": "buyer-002",
+        "sellerId": "seller-002",
+        "previousState": "open"
+    }
+}

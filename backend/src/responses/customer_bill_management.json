@@ -1,0 +1,182 @@
+{
+    "CB-123": {
+        "id": "CB-123",
+        "amountDue": {
+            "unit": "EUR",
+            "value": 120.0
+        },
+        "appliedPayment": [],
+        "billingAccount": {
+            "id": "00000000-1111-0000-0000-000000000001"
+        },
+        "billCycle": "BC-1234",
+        "billDate": "2023-10-04T09:43:40.165Z",
+        "billDocument": {
+            "url": "https://example.com/documents/00000000-0000-1111-2222-000000001111"
+        },
+        "billNo": "780123456",
+        "billingPeriod": {
+            "startDateTime": "2022-10-01T08:00:00.297Z",
+            "endDateTime": "2022-10-31T08:00:00.297Z"
+        },
+        "category": "normal",
+        "customerBillItem": [
+            {
+                "href": "http://mef.com:8080/mefApi/sonata/customerBillManagement",
+                "id": "ABR124"
+            }
+        ],
+        "credits": {
+            "unit": "EUR",
+            "value": 0.0
+        },
+        "discounts": {
+            "unit": "EUR",
+            "value": 0.0
+        },
+        "fees": {
+            "unit": "EUR",
+            "value": 10.0
+        },
+        "financialAccount": {
+            "id": "23-0000-0000-3324-3332-3334"
+        },
+        "lastUpdate": "2022-09-31T10:30:00.846Z",
+        "paymentDueDate": "2022-10-31T08:00:00.846Z",
+        "runType": "onCycle",
+        "relatedContactInformation": [
+            {
+                "emailAddress": "john.example@example.com",
+                "name": "John Example",
+                "number": "+12-345-678-90",
+                "organization": "Buyer Example Co.",
+                "role": "buyerBillingContact"
+            }
+        ],
+        "remainingAmount": {
+            "unit": "EUR",
+            "value": 120.0
+        },
+        "state": "generated",
+        "previousState": "",
+        "taxExcludedAmount": {
+            "unit": "EUR",
+            "value": 100.0
+        },
+        "taxIncludedAmount": {
+            "unit": "EUR",
+            "value": 120.0
+        },
+        "taxItem": [
+            {
+                "taxCategory": "VAT",
+                "taxRate": 20.0,
+                "taxAmount": {
+                    "unit": "EUR",
+                    "value": 20.0
+                }
+            }
+        ],
+        "href": "http://mef.com:8080/mefApi/sonata/customerBillManagement",
+        "sellerId": "sellerId-001",
+        "buyerId": "buyerId-001"
+    },
+    "CB-124": {
+        "id": "CB-124",
+        "amountDue": {
+            "unit": "EUR",
+            "value": 120.0
+        },
+        "appliedPayment": [
+            {
+                "appliedAmount": {
+                    "unit": "EUR",
+                    "value": 120.0
+                },
+                "payment": {
+                    "id": "PAY-9876",
+                    "amount": {
+                        "unit": "EUR",
+                        "value": 120.0
+                    },
+                    "paymentMethod": "electronic",
+                    "paymentDate": "2022-10-25T09:00:00.846Z"
+                }
+            }
+        ],
+        "billingAccount": {
+            "id": "00000000-1111-0000-0000-000000000001"
+        },
+        "billCycle": "BC-1234",
+        "billDate": "2022-09-31T10:30:00.846Z",
+        "billDocument": {
+            "url": "https://example.com/documents/00000000-0000-1111-2222-000000001111"
+        },
+        "billNo": "780123456",
+        "billingPeriod": {
+            "startDateTime": "2022-10-01T08:00:00.297Z",
+            "endDateTime": "2022-10-31T08:00:00.297Z"
+        },
+        "category": "normal",
+        "customerBillItem": [
+            {
+                "href": "http://mef.com:8080/mefApi/sonata/customerBillManagement",
+                "id": "ABR123"
+            }
+        ],
+        "credits": {
+            "unit": "EUR",
+            "value": 0.0
+        },
+        "discounts": {
+            "unit": "EUR",
+            "value": 0.0
+        },
+        "fees": {
+            "unit": "EUR",
+            "value": 10.0
+        },
+        "financialAccount": {
+            "id": "23-0000-0000-3324-3332-3334"
+        },
+        "lastUpdate": "2022-10-25T09:00:00.846Z",
+        "paymentDueDate": "2022-10-31T08:00:00.846Z",
+        "runType": "onCycle",
+        "relatedContactInformation": [
+            {
+                "emailAddress": "john.example@example.com",
+                "name": "John Example",
+                "number": "+12-345-678-90",
+                "organization": "Buyer Example Co.",
+                "role": "buyerBillingContact"
+            }
+        ],
+        "remainingAmount": {
+            "unit": "EUR",
+            "value": 0.0
+        },
+        "state": "settled",
+        "taxExcludedAmount": {
+            "unit": "EUR",
+            "value": 100.0
+        },
+        "taxIncludedAmount": {
+            "unit": "EUR",
+            "value": 130.0
+        },
+        "taxItem": [
+            {
+                "taxCategory": "VAT",
+                "taxRate": 20.0,
+                "taxAmount": {
+                    "unit": "EUR",
+                    "value": 20.0
+                }
+            }
+        ],
+        "previousState": "",
+        "href": "http://mef.com:8080/mefApi/sonata/customerBillManagement",
+        "sellerId": "sellerId-002",
+        "buyerId": "buyerId-002"
+    }
+}

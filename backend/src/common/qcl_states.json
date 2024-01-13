@@ -1,0 +1,46 @@
+{
+    "all_states": {
+        "acknowledged": [
+            "Order received in Lattice/Create order received in Lattice",
+            "Order placed successfully",
+            "RECEIVED",
+            "OPEN"
+        ],
+        "inProgress": [
+            "IN_PROGRESS",
+            "WORK IN PROGRESS"
+        ],
+        "pending.assessingModification": [
+            "ON_HOLD",
+            "AWAITING APPROVAL",
+            "HOLD"
+        ],
+        "completed": [
+            "CLOSED",
+            "CLOSED COMPLETE"
+        ],
+        "cancelled": [
+            "Cancelled by user",
+            "Cancelled successfully",
+            "CANCELLED",
+            "CLOSED CANCELLED"
+        ],
+        "failed": [
+            "Please check error message"
+        ]
+    },
+    "terminal_states": [
+        "CLOSED",
+        "CANCELLED",
+        "Cancelled by user",
+        "Cancelled successfully",
+        "Please check error message",
+        "CLOSED COMPLETE",
+        "CLOSED CANCELLED"
+    ],
+    "file_map":{
+        "order": "sonata_response.json",
+        "cancel": "cancel_sonata_response.json",
+        "move": ""
+    }
+}

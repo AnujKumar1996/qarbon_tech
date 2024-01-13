@@ -1,0 +1,9 @@
+backend/__pycache__/
+backend/routes/__pycache__/
+backend/src/common/__pycache__/
+backend/src/endpoints/__pycache__/
+backend/src/schemas/__pycache__/
+*.pyc
+.env
+.pyc
+__pycache__

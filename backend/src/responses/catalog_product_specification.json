@@ -1,0 +1,123 @@
+{
+    "productSpecification-1": {
+      "id": "productSpecification-1",
+      "href": "http://mef.com:8080/mefApi/sonata/productCatalog/v1/productSpecification/productSpecification-9",
+      "name": "Ethernet Private Tree EVC EP",
+      "lifecycleStatus": "active",
+      "lastUpdate": "2023-01-19T16:30:51.626Z",
+      "brand": "Product Brand 1",
+      "description": "EP TREE EVC EP",
+      "productNumber": "PNo.01",
+      "attachment": [
+        {
+          "attachmentId": "4e5b3701-47f8-47a7-bcf8-d3d740b4cd60",
+          "author": "John Doe",
+          "creationDate": "2023-01-19T16:33:20.324Z",
+          "description": "EP TREE EVC doc",
+          "mimeType": "application/pdf",
+          "name": "Technical documentation",
+          "size": {
+            "amount": 1050.0,
+            "units": "KBYTES"
+          },
+          "source": "buyer",
+          "url": "https://lso.mef.net/lso-payload-catalog/ep-tree-ep-product-payload"
+        }
+      ],
+      "note": [
+        {
+          "author": "John Doe",
+          "date": "2022-11-29T16:33:20.324Z",
+          "id": "43072c06-34ac-4713-b0b1-371cb7479400",
+          "source": "buyer",
+          "text": "Lorem ipsum"
+        }
+      ],
+      "sourceSchema": {
+        "schemaLocation": "http://mef.com:8081/publisher/v1/schema/6346d966-0a9c-4dfe-88f2-86b0e995a8a9"
+      },
+      "productSpecificationRelationship": [
+        {
+          "id": "productSpecification-09",
+          "relationshipType": "rootEndpointOfEvc",
+          "minCardinality": 0,
+          "maxCardinality": 1
+        },
+        {
+          "id": "productSpecification-10",
+          "relationshipType": "leafEndpointOfEvc",
+          "minCardinality": 0,
+          "maxCardinality": 1
+        },
+        {
+          "id": "productSpecification-06",
+          "relationshipType": "connectsToUni",
+          "minCardinality": 1,
+          "maxCardinality": 1
+        }
+      ],
+      "sellerId": "sellerId-001",
+      "buyerId": "buyerId-001"
+    },
+    
+    "productSpecification-2": {
+        "id": "productSpecification-2",
+        "href": "http://mef.com:8080/mefApi/sonata/productCatalog/v1/productSpecification/productSpecification-9",
+        "name": "Ethernet Private Tree EVC EP",
+        "lifecycleStatus": "orderable",
+        "lastUpdate": "2022-11-29T16:33:20.324Z",
+        "brand": "Product Brand 2",
+        "description": "EP TREE EVC EP",
+        "productNumber": "PNo.02",
+        "attachment": [
+          {
+            "attachmentId": "4e5b3701-47f8-47a7-bcf8-d3d740b4cd60",
+            "author": "John Doe",
+            "creationDate": "2023-01-19T16:33:20.324Z",
+            "description": "EP TREE EVC doc",
+            "mimeType": "application/pdf",
+            "name": "Technical documentation",
+            "size": {
+              "amount": 1050.0,
+              "units": "BYTES"
+            },
+            "source": "buyer",
+            "url": "https://lso.mef.net/lso-payload-catalog/ep-tree-ep-product-payload"
+          }
+        ],
+        "note": [
+          {
+            "author": "John Doe",
+            "date": "2023-01-19T16:33:20.324Z",
+            "id": "43072c06-34ac-4713-b0b1-371cb7479400",
+            "source": "buyer",
+            "text": "Lorem ipsum"
+          }
+        ],
+        "sourceSchema": {
+          "schemaLocation": "http://mef.com:8081/publisher/v1/schema/6346d966-0a9c-4dfe-88f2-86b0e995a8a9"
+        },
+        "productSpecificationRelationship": [
+          {
+            "id": "productSpecification-3",
+            "relationshipType": "rootEndpointOfEvc",
+            "minCardinality": 0,
+            "maxCardinality": 1
+          },
+          {
+            "id": "productSpecification-1",
+            "relationshipType": "leafEndpointOfEvc",
+            "minCardinality": 0,
+            "maxCardinality": 1
+          },
+          {
+            "id": "productSpecification-4",
+            "relationshipType": "connectsToUni",
+            "minCardinality": 1,
+            "maxCardinality": 1
+          }
+        ],
+        "sellerId": "sellerId-002",
+        "buyerId": "buyerId-002"
+  }
+}

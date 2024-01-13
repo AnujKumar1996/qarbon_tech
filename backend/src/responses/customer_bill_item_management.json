@@ -1,0 +1,108 @@
+
+{
+    "ABR123":{
+        "id": "ABR123",
+        "appliedTax": [
+        {
+        "category": "country",
+        "rate": 20, 
+        "description": "Country Tax",
+        "amount": { 
+        "unit": "EUR",
+        "value": 10.0
+        }
+        }
+        ],
+        "appliedFee": [
+        {
+        "category": "recurring",
+        "rate": 10,
+        "description": "Recurring Fee",
+        "amount": {
+        "unit": "EUR",
+        "value": 5.0
+        }
+        }
+        ],
+        "customerBillItemType": "recurring",
+        "description": "Subscriber Operator charge",
+        "periodCoverage": {
+        "startDateTime": "2022-10-01T08:00:00.297Z",
+        "endDateTime": "2022-10-31T08:00:00.297Z"
+        },
+        "product": {
+        "id": "EVLAN1345"
+        },
+        "productOrderItem": {
+        "productOrderId": "00000000-5555-0000-0000-000000000022",
+        "productOrderItemId": "item-001"
+        },
+        "productName": "Elan_connectivity", 
+        "state": "generated",
+        "taxExcludedAmount": { 
+        "unit": "EUR",
+        "value": 50
+        },
+        "unit": "month",
+        "unitRate": { 
+        "unit": "EUR",
+        "value": 65
+        },
+        "unitQuantity": 1 
+        },
+        
+    "ABR124": {
+        "id": "ABR124",
+        "appliedTax": [
+        {
+        "category": "country",
+        "rate": 20,
+        "description": "Country Tax",
+        "amount": {
+        "unit": "EUR",
+        "value": 10.0
+        }
+        }
+        ],
+        "appliedFee": [
+        {
+        "category": "recurring",
+        "rate": 10,
+        "description": "Recurring Fee",
+        "amount": {
+        "unit": "EUR",
+        "value": 5.0
+        }
+        }
+        ],
+        "customerBillItemType": "recurring",
+        "description": "Subscriber Operator charge",
+        "periodCoverage": {
+        "startDateTime": "2022-10-01T08:00:00.297Z",
+        "endDateTime": "2022-10-31T08:00:00.297Z"
+        },
+        "product": {
+        "id": "ELAN1345"
+        },
+        "productOrderItem": {
+        "productOrderId": "00000000-5555-0000-0000-000000000001",
+        "productOrderItemId": "item-002"
+        },
+       
+        "productName": "Evlan_connectivity",
+        "state": "settled",
+        "taxExcludedAmount": {
+        "unit": "EUR",
+        "value": 50
+        },
+        "unit": "month",
+        "unitRate": {
+        "unit": "EUR",
+        "value": 65
+        },
+        "unitQuantity": 1
+        }   
+       
+
+    
+}
